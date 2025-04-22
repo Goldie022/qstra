@@ -9,18 +9,25 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <style>
     body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #0a0a0a;
-      background-image:
-        radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.04) 1px, transparent 0),
-        linear-gradient(to bottom right, #0a0a0a, #0f0f11 50%, #15171c 100%);
-      background-size: cover, auto;
-      background-repeat: no-repeat, repeat;
-      background-attachment: fixed;
-      color: #eaeaea;
-      overflow-x: hidden;
-    }
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(145deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 50%, transparent 100%),
+              radial-gradient(circle at 40% 30%, rgba(255,255,255,0.05), transparent 50%),
+              linear-gradient(135deg, #0c0c0f, #1a1c22);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #eaeaea;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+html {
+  background: linear-gradient(135deg, #0c0c0f, #1a1c22);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
     nav {
       display: flex;
       justify-content: center;
@@ -99,6 +106,7 @@
       box-shadow: 0 0 0 1px #ffffff;
     }
     section {
+  padding: 100px 0;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -130,80 +138,60 @@
       color: #888;
       border-top: 1px solid #1a1a1a;
     }
-  </style>
+      
+      .section-content {
+      flex: 1 1 500px;
+      padding: 20px;
+      background: #111216;
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .section-content:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
+    }
+</style>
 </head>
 <body>
   <nav>
-    <a href="#about">About</a>
-    <a href="#how">How It Works</a>
-    <a href="#submit">Submit</a>
-    <a href="#backers">Backers</a>
-    <a href="#roadmap">Roadmap</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <a href="#hero">Home</a>
+  <a href="about.html">About</a>
+  <a href="how.html">How It Works</a>
+  <a href="submit.html">Submit</a>
+  <a href="backers.html">Backers</a>
+  <a href="roadmap.html">Roadmap</a>
+  <a href="contact.html">Contact</a>
+</nav>
 
-  <div class="container">
+  <div class="container" style="padding-top: 120px; padding-bottom: 120px;">
     <div class="hero" id="hero">
-      <div class="hero-logo">
-        <img src="qstra_icon.png" alt="Q Logo">
-        <h1>QSTRA</h1>
-      </div>
-      <p>Encrypted Alpha. DAO-Governed Capital. The On-Chain Quant Ecosystem.</p>
-      <div class="buttons">
-        <a href="https://your-strategy-form-link" target="_blank">Submit a Strategy</a>
-        <a href="https://your-investor-form-link" target="_blank">Join as a Backer</a>
-      </div>
+  <div class="hero-logo" style="flex-direction: row; gap: 12px; align-items: center;">
+  <img src="q_icon_final_transparent.png" alt="Q Logo" style="width: 84px; height: auto;">
+  <h1 style="font-size: 3.5rem; font-weight: 600; letter-spacing: 0.1rem; color: white; margin: 0;">STRA</h1>
+</div>
+  <p style="font-size: 1.2rem; color: #bbb; max-width: 600px; margin: 20px auto 40px;">Encrypted Alpha. DAO-Governed Capital. The On-Chain Quant Ecosystem.</p>
+  <div class="buttons">
+    <a href="https://your-strategy-form-link" target="_blank">Submit a Strategy</a>
+    <a href="https://your-investor-form-link" target="_blank">Join as a Backer</a>
+  </div>
+</div>
+      
     </div>
 
-    <section id="about">
-      <div class="section-content">
-        <h2>About QSTRA</h2>
-        <p>QSTRA is the world’s first decentralized quant platform. We fund encrypted trading strategies from elite developers and data scientists — without them ever revealing their code.</p>
-      </div>
-    </section>
+    
 
-    <section id="how">
-      <div class="section-content">
-        <h2>How It Works</h2>
-        <p>Submit your encrypted trading model → Get DAO-reviewed → Receive capital → Share in profits via $QSTRA tokens.</p>
-      </div>
-    </section>
+    
 
-    <section id="submit">
-      <div class="section-content">
-        <h2>Strategy Submission</h2>
-        <p>Encrypted ZIPs, GitHub links, and IPFS submissions accepted. Models are ranked anonymously based on performance.</p>
-        <div class="buttons">
-          <a href="https://your-strategy-form-link" target="_blank">Submit Your Model</a>
-        </div>
-      </div>
-    </section>
+    
 
-    <section id="backers">
-      <div class="section-content">
-        <h2>For Backers</h2>
-        <p>Support top-tier quant talent, access DAO voting rights, and earn performance-linked rewards.</p>
-        <div class="buttons">
-          <a href="https://your-investor-form-link" target="_blank">Become a Backer</a>
-        </div>
-      </div>
-    </section>
+    
 
-    <section id="roadmap">
-      <div class="section-content">
-        <h2>Roadmap</h2>
-        <p>Q2 2025: Strategy Intake & Waitlist<br>Q3: MVP Launch + Token<br>Q4: DAO Governance + Vaults</p>
-      </div>
-    </section>
+    
 
-    <section>
-      <div class="section-content">
-        <h2>One-Pager</h2>
-        <p><a href="QSTRA_One_Pager.pdf" style="color:#ffffff; font-weight:bold;" target="_blank">Download the QSTRA PDF</a></p>
-      </div>
-    </section>
+    
 
-    <section id="contact">
+    <section id="contact" style="border-bottom: 1px solid #1a1a1a;">
       <div class="section-content">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:team@qstra.io" style="color: #ffffff;">team@qstra.io</a></p>

@@ -11,13 +11,32 @@
       background-color: #0b0c0f;
       color: #ffffff;
     }
+    nav {
+      background: #0b0c0f;
+      padding: 10px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #00ffe2;
+      text-decoration: none;
+      font-weight: 600;
+    }
     header {
       text-align: center;
-      padding: 100px 20px 60px;
+      padding: 80px 20px 60px;
       background: linear-gradient(to bottom, #0b0c0f, #101114);
     }
+    header img {
+      width: 260px;
+      height: auto;
+      margin-bottom: 20px;
+    }
     h1 {
-      font-size: 3rem;
+      font-size: 2.8rem;
       color: #00ffe2;
     }
     p {
@@ -37,6 +56,10 @@
       text-decoration: none;
       border-radius: 6px;
       font-weight: 600;
+      transition: all 0.2s ease;
+    }
+    .buttons a:hover {
+      background: #1fffe6;
     }
     section {
       max-width: 800px;
@@ -63,40 +86,68 @@
   </style>
 </head>
 <body>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#how">How It Works</a>
+    <a href="#submit">Submit</a>
+    <a href="#backers">Backers</a>
+    <a href="#roadmap">Roadmap</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
   <header>
-    <h1>QSTRA</h1>
+    <img src="qstra_logo_extracted.png" alt="QSTRA Logo" />
     <p>Encrypted Alpha. DAO-Governed Capital.<br>The On-Chain Quant Ecosystem.</p>
     <div class="buttons">
-      <a href="https://your-strategy-form-link" target="_blank">Submit a Strategy</a>
-      <a href="https://your-investor-form-link" target="_blank">Join as a Backer</a>
+      <a href="https://tally.so/r/w5r9a6" target="_blank">Submit a Strategy</a>
+      <a href="https://tally.so/r/mZWOM0" target="_blank">Join as a Backer</a>
     </div>
   </header>
 
-  <section>
-    <h2>What is QSTRA?</h2>
+  <section id="about">
+    <h2>About QSTRA</h2>
     <p>
-      QSTRA is the world’s first decentralized quant platform. We fund encrypted trading strategies from the sharpest minds in the world through a performance-first, DAO-governed system. Your code stays private. Your alpha stays yours.
+      QSTRA is the world's first decentralized quant platform. We connect trading signal creators with capital without ever revealing their code. Governed by a DAO, QSTRA funds top-performing, encrypted strategies across crypto, equities, and FX.
     </p>
   </section>
 
-  <section>
+  <section id="how">
     <h2>How It Works</h2>
     <p>
       1. Submit your encrypted strategy<br>
       2. DAO ranks & votes<br>
-      3. Top strategies get deployed with capital<br>
-      4. Quants earn token + profit share<br>
-      5. Reputation grows on-chain
+      3. Top strategies receive deployment capital<br>
+      4. Quants earn yield + $QSTRA rewards<br>
+      5. Leaderboard + token-based rep grows over time
     </p>
   </section>
 
-  <section>
-    <h2>Timeline</h2>
+  <section id="submit">
+    <h2>Submit a Strategy</h2>
     <p>
-      Q2: Forms + Strategy Intake<br>
-      Q3: MVP + Token Launch<br>
-      Q4: Vault Funding + Public DAO Governance
+      We accept encrypted ZIPs, GitHub links, or IPFS-hosted models. All strategies are evaluated based on performance metrics, not credentials.
+    </p>
+    <div class="buttons">
+      <a href="https://tally.so/r/w5r9a6" target="_blank">Submit Now</a>
+    </div>
+  </section>
+
+  <section id="backers">
+    <h2>Backers & Supporters</h2>
+    <p>
+      Interested in backing QSTRA as an early contributor, LP, or advisor? Fill out the form and get access to airdrops, updates, and the private backer channel.
+    </p>
+    <div class="buttons">
+      <a href="https://tally.so/r/mZWOM0" target="_blank">Join as a Backer</a>
+    </div>
+  </section>
+
+  <section id="roadmap">
+    <h2>Roadmap</h2>
+    <p>
+      <strong>Q2 2025</strong>: Forms Live, Community Waitlist Launch<br>
+      <strong>Q3 2025</strong>: MVP DAO Launch, $QSTRA Token Drop, Strategy Leaderboard Activation<br>
+      <strong>Q4 2025</strong>: Vault Deployment, Public DAO Governance, Contributor Airdrops
     </p>
   </section>
 
@@ -107,9 +158,14 @@
     </p>
   </section>
 
-  <footer>
-    &copy; 2025 QSTRA | team@qstra.io
-  </footer>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:team@qstra.io" style="color: #00ffe2;">team@qstra.io</a></p>
+    <p>Twitter: <a href="https://twitter.com/QSTRA" target="_blank" style="color: #00ffe2;">@QSTRA</a></p>
+  </section>
 
+  <footer>
+    &copy; 2025 QSTRA DAO | All rights reserved.
+  </footer>
 </body>
 </html>

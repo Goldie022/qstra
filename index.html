@@ -207,19 +207,23 @@ html {
 
 
 
-
-
-
-
-
-
-
-
-    
-
-  <footer>
+    <footer style="
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(12, 12, 15, 0.85);
+    color: #888;
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    backdrop-filter: blur(6px);
+    z-index: 1000;
+  ">
     &copy; 2025 QSTRA DAO. All rights reserved.
   </footer>
+  
 
   <script>
     gsap.from("#hero", { opacity: 0, y: 40, duration: 1.2 });
